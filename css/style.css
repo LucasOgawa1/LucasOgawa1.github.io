@@ -22,6 +22,7 @@ ul {
 img {
   display: block;
   max-width: 400px;
+  width: 100%;
 }
 
 main {
@@ -248,11 +249,8 @@ footer li a:hover {
 @media (max-width: 600px) {
 
 body{
-
   width: 100%;
-  max-width: auto;
-  margin: 0;
-  padding: 0;
+  max-width: 400px;
 
 }
 
@@ -264,6 +262,14 @@ body{
   }
   header .rodateto {
     padding-right: 2rem;
+    justify-content: center;
+  }
+
+  header .menu{
+
+    margin: 0 auto;
+    gap: 40px;
+
   }
 
   .sessao{
@@ -279,6 +285,8 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     line-height: 1rem;
   }
+
+
 }
 
 /*---------------------------------------------Página de Todos Produtos------------------------------------------*/
