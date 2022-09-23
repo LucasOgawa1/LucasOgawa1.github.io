@@ -20,7 +20,7 @@ a{
 
 body{
 
-    background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.541),rgba(0, 0, 0, 0.884)), url(../img/vanessa\ eight.PNG);
+    background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.541),rgba(0, 0, 0, 0.884)), url(./img/vanessa\ eight.PNG);
     background-size:100%;
     background-position: top;
     font-family: 'Poppins',sans-serif;
