@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 400px;
+}
+
+main {
+  position: relative;
+}
+
+.rodateto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: #d2d2d2 1px 1px 15px 1px;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.pesquisar {
+  border-radius: 4px;
+  border: solid 2px #d4d4d4;
+  margin: 5px;
+  align-items: center;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.lupa {
+  display: flex;
+  align-items: center;
+  transition: 0.6s;
+}
+
+.lupa a {
+  transition: 0.6s;
+}
+.lupa a:hover {
+  transform: rotate(60deg);
+  transition: 0.4s;
+}
+
+.login a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border: solid 1.5px #b6b3b3;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.login a:hover {
+  background-color: blue;
+  color: white;
+  transform: rotate(3deg);
+  transition: 0.6s;
+}
+
+.frete {
+  font-size: 12px;
+  font-weight: bold;
+  border: solid 3px rgba(0, 0, 0, 0.199);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  transition: 1s;
+}
+
+.frete:hover {
+  background-color: red;
+  color: white;
+  transition: 1s;
+  border: solid 2px black;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  padding: 20px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.menu-itens a {
+  border: 2px solid rgba(0, 0, 0, 0.267);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.63);
+}
+
+.menu-itens a:hover {
+  background-color: rgba(0, 110, 255, 0.342);
+  color: darkblue;
+  font-weight: bold;
+  text-decoration: underline;
+  border: none;
+
+}
+
+.banner1 {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 40px;
+}
+
+.sessao {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 100%;
+  max-width: 1000px;
+  padding-left: 50px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    to right,
+    #2e00fd13,
+    rgba(0, 255, 221, 0.041),
+    rgba(0, 128, 0, 0.075)
+  );
+  border-radius: 20px;
+  margin-bottom: 70px;
+}
+
+.titulo-solucao {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.sessao img {
+  align-self: center;
+  justify-self: center;
+  padding: 40px;
+  opacity: 90%;
+  border-radius: 20%;
+}
+
+.desc {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+.precocomprar a:hover{
+
+  text-decoration: underline;
+
+}
+
+.desc h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgba(0, 0, 87, 0.589);
+}
+
+.desc p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.desc a {
+  background-color: rgba(0, 0, 87, 0.589);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  color: #e7e7e7;
+  font-weight: bold;
+  display: grid;
+  justify-content: center;
+  justify-self: center;
+}
+
+.desc a:hover {
+  background-color: blue;
+}
+
+
+.icone-whats img {
+  width: 35px;
+  bottom: 10px;
+  left: 10px;
+  position: fixed;
+  filter: invert(1);
+  z-index: 2;
+}
+
+.icone-whats::after {
+  content: "";
+  width: 55px;
+  height: 55px;
+  background: rgb(2, 148, 2);
+  position: fixed;
+  bottom: 3px;
+  left: 0;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding: 30px;
+  background-color: #e7e7e7;
+  margin: 10px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.linha-pe {
+  border-right: solid 4px rgba(0, 0, 0, 0.116);
+}
+
+footer :nth-child(3) {
+  border-right: none;
+}
+
+footer li a:hover {
+  color: blue;
+}
+
+/*responsividade*/
+
+@media (max-width: 600px) {
+
+body{
+
+  width: 100%;
+  max-width: auto;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+  img {
+  max-width: 300px;
+  width: 100%;
+  
+  }
+  header .rodateto {
+    padding-right: 2rem;
+  }
+
+  .sessao{
+
+    padding: 0;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  footer {
+    font-size: 0.7rem;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    line-height: 1rem;
+  }
+}
+
+/*---------------------------------------------Página de Todos Produtos------------------------------------------*/
+
+.todos-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  justify-items: center;
+
+}
+
+.produtos-itens{
+  padding: 10px;
+}
+
+.produtos-itens:hover{
+  border: 1px solid lightblue;
+  border-radius: 10px;
+}
+
+.produtos-itens img{
+
+  max-width: 300px;
+  width: 100%;
+}
+
+.precocomprar {
+  text-align: center;
+}
+
+.buttonbuy{
+
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  background: rgba(0, 0, 87, 0.589);
+  border: 1px rgba(0, 0, 87, 0.589);
+  color: white;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.buttonbuy:hover{
+
+  background: blue;
+  transition: 2s;
+
+}
+
