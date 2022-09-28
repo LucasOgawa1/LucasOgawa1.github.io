@@ -114,14 +114,33 @@ main {
   cursor: pointer;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.63);
+  position: relative;
 }
 
-.menu-itens a:hover {
-  background-color: rgba(0, 110, 255, 0.342);
+.menu-itens a::before {
+  content: "";
+  background: rgba(0, 110, 255, 0.342);
+  height: 100%;
+  width: 0;
+  transition: 0.5s;
+  display: block;
+  position: absolute;
+  border-radius: 8px;
+  margin: -7px 2px;
+ 
+
+}
+
+.menu-itens a:hover::before {
+  width: 100%;
+  transition: 0.5s;
+  border: none;
+}
+
+.menu-itens a:hover{
+
   color: darkblue;
   font-weight: bold;
-  text-decoration: underline;
-  border: none;
 
 }
 
@@ -168,10 +187,8 @@ main {
   gap: 40px;
   padding: 40px;
 }
-.precocomprar a:hover{
-
+.precocomprar a:hover {
   text-decoration: underline;
-
 }
 
 .desc h2 {
@@ -199,7 +216,6 @@ main {
 .desc a:hover {
   background-color: blue;
 }
-
 
 .icone-whats img {
   width: 35px;
@@ -247,33 +263,26 @@ footer li a:hover {
 /*responsividade*/
 
 @media (max-width: 600px) {
-
-body{
-  width: 100%;
-  max-width: 400px;
-
-}
-
+  body {
+    width: 100%;
+    max-width: 400px;
+  }
 
   img {
-  max-width: 300px;
-  width: 100%;
-  
+    max-width: 300px;
+    width: 100%;
   }
   header .rodateto {
     padding-right: 2rem;
     justify-content: center;
   }
 
-  header .menu{
-
+  header .menu {
     margin: 0 auto;
     gap: 40px;
-
   }
 
-  .sessao{
-
+  .sessao {
     padding: 0;
     margin-right: 0;
     justify-content: center;
@@ -285,8 +294,6 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     line-height: 1rem;
   }
-
-
 }
 
 /*---------------------------------------------Página de Todos Produtos------------------------------------------*/
@@ -296,20 +303,18 @@ body{
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   justify-items: center;
-
 }
 
-.produtos-itens{
+.produtos-itens {
   padding: 10px;
 }
 
-.produtos-itens:hover{
+.produtos-itens:hover {
   border: 1px solid lightblue;
   border-radius: 10px;
 }
 
-.produtos-itens img{
-
+.produtos-itens img {
   max-width: 300px;
   width: 100%;
 }
@@ -318,8 +323,7 @@ body{
   text-align: center;
 }
 
-.buttonbuy{
-
+.buttonbuy {
   margin-top: 0.5rem;
   padding: 0.7rem;
   font-size: 1.2rem;
@@ -331,10 +335,7 @@ body{
   transition: 1s;
 }
 
-.buttonbuy:hover{
-
+.buttonbuy:hover {
   background: blue;
   transition: 2s;
-
 }
-
