@@ -29,6 +29,11 @@ main {
   position: relative;
 }
 
+.rodateto img{
+
+  width: 300px;
+}
+
 .rodateto {
   display: flex;
   justify-content: space-between;
@@ -265,11 +270,10 @@ footer li a:hover {
 @media (max-width: 600px) {
   body {
     width: 100%;
-    max-width: 400px;
   }
 
   img {
-    max-width: 300px;
+
     width: 100%;
   }
   header .rodateto {
@@ -338,4 +342,13 @@ footer li a:hover {
 .buttonbuy:hover {
   background: blue;
   transition: 2s;
+}
+
+/* Solução acnes e peles oleósas */
+
+.mulher-acne{
+
+  border-radius: 4px;
+  margin: 0 auto;
+
 }
