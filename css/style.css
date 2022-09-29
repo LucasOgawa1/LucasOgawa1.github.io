@@ -14,6 +14,7 @@ a {
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;
+  background-color: #f7f7f7;
 }
 ul {
   list-style: none;
@@ -29,8 +30,7 @@ main {
   position: relative;
 }
 
-.rodateto img{
-
+.rodateto img {
   width: 300px;
 }
 
@@ -132,8 +132,6 @@ main {
   position: absolute;
   border-radius: 8px;
   margin: -7px 2px;
- 
-
 }
 
 .menu-itens a:hover::before {
@@ -142,11 +140,9 @@ main {
   border: none;
 }
 
-.menu-itens a:hover{
-
+.menu-itens a:hover {
   color: darkblue;
   font-weight: bold;
-
 }
 
 .banner1 {
@@ -273,7 +269,6 @@ footer li a:hover {
   }
 
   img {
-
     width: 100%;
   }
   header .rodateto {
@@ -345,10 +340,80 @@ footer li a:hover {
 }
 
 /* Solução acnes e peles oleósas */
-
-.mulher-acne{
-
-  border-radius: 4px;
+.acne-bg{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 800px;
   margin: 0 auto;
+  width: 100%;
+  gap: 30px;
+  background-image: linear-gradient(
+    to right,
+    #fd00be17,
+    rgba(0, 238, 255, 0.062),
+    rgba(0, 128, 0, 0.137)
+  );
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+
 
 }
+.mulher-acne IMG {
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.acne-texto{
+
+  text-align: start;
+  color: #313131;
+
+}
+
+.acne-texto h1{
+  font-size: 40px;
+  line-height: 1;
+}
+
+.acne-texto h2{
+
+  padding:18px 0;
+  line-height: 1;
+}
+.acne-texto ul{
+
+  font-weight: bold;
+  text-align: left;
+  list-style-type:disc;
+  padding-left: 25px;
+  padding-bottom: 20px;
+  
+}
+
+.acne-texto h3{
+
+  text-align: center;
+
+}
+
+@media(max-width:800px){
+
+
+
+  .acne-bg{
+
+    display: flex;
+    flex-direction: column-reverse;
+
+
+  }
+
+}
+
+
+
+
+
+
